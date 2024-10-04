@@ -12,6 +12,17 @@ export interface INew {
     urlToImage: string;
 }
 
+enum StatusResponse {
+    Ok = 'ok',
+    Error = 'error',
+}
+
+export interface INewsResponse {
+    articles: INew[];
+    status: StatusResponse;
+    totalResults: number;
+}
+
 export interface ISource {
     category: string;
     country: string;
@@ -22,22 +33,12 @@ export interface ISource {
     url: string;
 }
 
-// enum StatusResponse {
-//     Ok = 'ok',
-//     Error = 'error',
-// }
+export interface ISourceResponse {
+    sources: ISource[];
+    status: StatusResponse;
+}
 
 // export interface IResponse {
 //     status: StatusResponse; //string
 //     sources: [];
-// }
-
-// export interface ISource {
-//     id: string;
-//     name: string;
-//     description: string;
-//     url: string;
-//     category: string;
-//     language: string;
-//     country: string;
 // }
