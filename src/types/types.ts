@@ -38,7 +38,6 @@ export interface ISourceResponse {
     status: StatusResponse;
 }
 
-// export interface IResponse {
-//     status: StatusResponse; //string
-//     sources: [];
-// }
+export type Options = {
+    [key: string]: string;
+};
