@@ -12,7 +12,7 @@ class AppController extends AppLoader {
         );
     }
 
-    getNews<T>(e: PointerEvent, callback: callbackType<T>) {
+    getNews<T>(e: Event, callback: callbackType<T>) {
         let target: EventTarget | null = e.target;
         const newsContainer: EventTarget | null = e.currentTarget;
 

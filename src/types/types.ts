@@ -1,6 +1,6 @@
 export interface INew {
-    author: string;
-    content: string;
+    author: string | null;
+    content?: string;
     description: string;
     publishedAt: string;
     source: {
@@ -9,7 +9,7 @@ export interface INew {
     };
     title: string;
     url: string;
-    urlToImage: string;
+    urlToImage: string | null;
 }
 
 enum StatusResponse {
