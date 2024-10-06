@@ -1,14 +1,16 @@
 .sources {
     display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 120px;
-    overflow: auto;
-    align-items: center;
-    font: 300 1em 'Fira Sans', sans-serif;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1800px;
+    padding: 30px;
+    font:
+        300 1em 'Fira Sans',
+        sans-serif;
 }
 
 .source__item {
+    width: 220px;
     background: none;
     border: 2px solid #30c5ff;
     font: inherit;
@@ -31,4 +33,32 @@
 .source__item-name {
     font-weight: 400;
     white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .sources {
+        padding: 30px 20px;
+        font:
+            300 0.9em 'Fira Sans',
+            sans-serif;
+    }
+    .source__item {
+        line-height: 1;
+        margin: 0.3em;
+        padding: 0.8em 1.6em;
+    }
+}
+
+@media (max-width: 500px) {
+    .sources {
+        padding: 20px 10px;
+        font:
+            300 0.9em 'Fira Sans',
+            sans-serif;
+    }
+    .source__item {
+        line-height: 1;
+        margin: 0.2em;
+        padding: 0.6em 1.2em;
+    }
 }
