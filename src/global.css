@@ -3,7 +3,7 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     color: #fff;
-    background: #17181c;
+    background: #000000;
     font-family: sans-serif;
 }
 
@@ -15,6 +15,24 @@ header h1 {
     font-size: 50px;
     font-weight: 800;
     text-align: center;
+}
+
+main {
+    min-height: calc(100vh - 255px);
+}
+
+.search-input {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    margin: 20px auto;
+    padding: 4px 12px;
+    border-radius: 5px;
+    color: #000000;
+    border: 2px solid #30c5ff;
 }
 
 footer {
@@ -46,6 +64,11 @@ footer .copyright:before {
     font-size: 24px;
 }
 
+.link-school img {
+    display: inline-block;
+    width: 100px;
+}
+
 .year {
     font-size: 24px;
 }
@@ -61,6 +84,9 @@ footer .copyright:before {
     }
     .link-github,
     .year {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .link-school img {
+        width: 80px;
     }
 }

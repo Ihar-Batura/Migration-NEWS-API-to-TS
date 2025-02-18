@@ -1,6 +1,5 @@
 export interface INew {
     author: string | null;
-    content?: string;
     description: string;
     publishedAt: string;
     source: {
@@ -10,6 +9,17 @@ export interface INew {
     title: string;
     url: string;
     urlToImage: string | null;
+    content?: string;
+}
+
+export interface ISource {
+    category: string;
+    country: string;
+    description: string;
+    id: string;
+    language: string;
+    name: string;
+    url: string;
 }
 
 enum StatusResponse {
@@ -21,16 +31,6 @@ export interface INewsResponse {
     articles: INew[];
     status: StatusResponse;
     totalResults: number;
-}
-
-export interface ISource {
-    category: string;
-    country: string;
-    description: string;
-    id: string;
-    language: string;
-    name: string;
-    url: string;
 }
 
 export interface ISourceResponse {
