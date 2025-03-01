@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #fff;
+    background: #000000;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 10px 30px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+main {
+    min-height: calc(100vh - 255px);
+}
+
+.search-input {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    margin: 20px auto;
+    padding: 4px 12px;
+    border-radius: 5px;
+    color: #000000;
+    border: 2px solid #30c5ff;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+footer .copyright {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+footer .copyright a {
+    color: #444;
+}
+footer .copyright a:hover {
+    color: #555;
+}
+footer .copyright:before {
+    content: '©';
+}
+
+.link-github {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.link-school img {
+    display: inline-block;
+    width: 100px;
+}
+
+.year {
+    font-size: 24px;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    footer {
+        gap: 10px;
+        padding: 0 15px;
+    }
+    .link-github,
+    .year {
+        font-size: 16px;
+    }
+    .link-school img {
+        width: 80px;
+    }
+}
